@@ -10,7 +10,7 @@ SEND_TEXT = """ Hello {},
 `I am Bitly Bot to shorten links.
 Send a valid link to shorten.`
 
-This bot is a part of [Ks Projects](https://t.me/Ks_Projects).
+Deployed with ❤️ By @GreyMatter_Bots
 """
 
 bot = Client(
