@@ -1,4 +1,4 @@
-# [Bitly Bot](https://telegram.dog/SL_BitlyBot)
+# [Bitly Bot](https://www.telegram.dog/bitly_xbot)
 
 Bitly URL shortener bot to shorten Unlimited URLs.
 
@@ -16,12 +16,15 @@ Collect these env variables to deploy this bot:-
 
 ## Deploy on Heroku
  
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Krishna-Singhal/Bitly-Bot/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Greymattersbot/Bitly-Bot/tree/master)
 
  ---
 
- ### Join [Projects channel](https://telegram.dog/Ks_Projects) for regular updates.
+ ### Join [Projects channel](https://www.telegram.dog/GreyMatter_Bots) for regular updates.
 
  ---
 
 ##### :star: this repo and show some :heart: if you found this repo useful.
+
+# Credits 
+- [Krishna-Singhal](https://github.com/Krishna-Singhal)
