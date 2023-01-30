@@ -55,19 +55,6 @@ async def bitly_converter_by_dkbotz(bot, message):
 
 
 
-@bot.on_message(filters.private & filters.text)
-async def reply_bitly_link(_, msg: Message):
-    try:
-        url = [msg.text]
-        response = shorten_urls(url)
-        await msg.reply(
-            f"**Shortened Url:**\n`{response[0].short_url}`",
-            disable_web_page_preview=True
-        )
-    except BitlyException as err:
-        await msg.reply(f"**ERROR:** `{str(err)}`")
-    except BitlyApiNotWorking:
-        await msg.reply("Bitly API is Down!")
 
 
 if __name__ == "__main__":
