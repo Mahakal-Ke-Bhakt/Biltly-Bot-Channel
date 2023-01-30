@@ -1,5 +1,6 @@
-from config import bot, SEND_TEXT
-import re
+from config import bot, SEND_TEXT, BITLY_KEY
+import re, random
+
 from BitlyAPI import shorten_urls
 from BitlyAPI.exceptions import BitlyException, BitlyApiNotWorking
 from pyshorteners import Shortener # Good Shortner 
