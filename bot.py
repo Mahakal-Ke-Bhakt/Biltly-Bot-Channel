@@ -14,6 +14,12 @@ async def start_(_, msg: Message):
         disable_web_page_preview=True
     )
 
+##### Channel Convert By @DKBOTZ #### DON'T REMOVE CREDIT 💳
+
+@bot.on_message(filters.channel & filters.incoming)
+async def bitly_converter_by_dkbotz(bot, message):
+    dk_id = message.chat.id
+    
 
 @bot.on_message(filters.private & filters.command("help"))
 async def help_(_, msg: Message):
