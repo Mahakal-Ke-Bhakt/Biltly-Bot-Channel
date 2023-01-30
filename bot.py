@@ -2,7 +2,7 @@ from config import bot, SEND_TEXT
 import re
 from BitlyAPI import shorten_urls
 from BitlyAPI.exceptions import BitlyException, BitlyApiNotWorking
-
+from pyshorteners import Shortener # Good Shortner 
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -17,7 +17,9 @@ async def replace_link(dkbotz):
         should_replace_link = True
 
         if should_replace_link:
-            dkbotz = shorten_urls(urls)
+            #dkbotz = shorten_urls(urls)
+            dkbotz = Shortener(api_key=random.choice(BITLY_KEY))
+            dkbotz = s.bitly.short(urls)
             print(dkbotz)
             text = text.replace(long_url, dkbotz)
             print(text)
