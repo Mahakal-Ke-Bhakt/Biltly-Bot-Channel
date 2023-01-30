@@ -13,7 +13,7 @@ async def replace_link(dkbotz):
 
     for link in links:
         urls = link
-        print(long_url)
+        print(urls)
         should_replace_link = True
 
         if should_replace_link:
