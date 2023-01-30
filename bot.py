@@ -52,6 +52,7 @@ async def by_dkbotz(_, message: Message):
     try:
         dkbotz = await replace_link(dkbotz)
         await message.edit(dkbotz)
+        return 
 
 
 
