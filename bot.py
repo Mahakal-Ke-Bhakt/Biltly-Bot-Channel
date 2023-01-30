@@ -1,5 +1,5 @@
 from config import bot, SEND_TEXT
-
+import re
 from BitlyAPI import shorten_urls
 from BitlyAPI.exceptions import BitlyException, BitlyApiNotWorking
 
