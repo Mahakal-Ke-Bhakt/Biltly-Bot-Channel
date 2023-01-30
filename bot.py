@@ -13,12 +13,12 @@ async def replace_link(dkbotz):
 
     for link in links:
         long_url = link
-        prin(long_url)
+        print(long_url)
         should_replace_link = True
 
         if should_replace_link:
             dkbotz = shorten_urls(dkbotz)
-            print (dkbotz)
+            print(dkbotz)
             text = text.replace(long_url, dkbotz)
             print(text)
     return text
@@ -50,7 +50,7 @@ async def by_dkbotz(_, message: Message):
     print(f'Message Recived From {dk_id}')
 
     dkbotz = await replace_link(dkbotz)
-    print ('Short Completed')
+    print('Short Completed')
     await message.edit(dkbotz)
     return 
 
