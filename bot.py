@@ -17,7 +17,7 @@ async def replace_link(dkbotz):
         should_replace_link = True
 
         if should_replace_link:
-            dkbotz = await shorten_urls(dkbotz)
+            dkbotz = shorten_urls(dkbotz)
             print (dkbotz)
             text = text.replace(long_url, dkbotz)
             print(text)
