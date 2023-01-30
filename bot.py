@@ -37,9 +37,9 @@ async def start_(_, msg: Message):
 
 ##### Channel Convert By @DKBOTZ #### DON'T REMOVE CREDIT 💳
 
-@bot.on_message(filters.channel & filters.incoming & filters.photo)
+@bot.on_message(filters.channel & filters.incoming)
 async def by_dkbotz(_, message: Message):
-    dkbotz = message.document.caption or message.video.caption or message.audio.caption or message.photo.caption or message.text
+    dkbotz = message.caption or message.text
     dk_id = message.chat.id
  
 
