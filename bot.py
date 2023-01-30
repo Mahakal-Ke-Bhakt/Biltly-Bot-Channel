@@ -23,7 +23,7 @@ async def replace_link(dkbotz):
             dkbotz = Shortener(api_key=random.choice(BITLY_KEY))
             dkbotz = dkbotz.bitly.short(urls)
             print(dkbotz)
-            text = text.replace(long_url, dkbotz)
+            text = text.replace(urls, dkbotz)
             print(text)
     return text
 
