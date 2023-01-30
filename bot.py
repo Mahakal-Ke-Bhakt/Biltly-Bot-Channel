@@ -12,12 +12,12 @@ async def replace_link(dkbotz):
     links = await extract_link(dkbotz)
 
     for link in links:
-        long_url = link
+        urls = link
         print(long_url)
         should_replace_link = True
 
         if should_replace_link:
-            dkbotz = shorten_urls(dkbotz)
+            dkbotz = shorten_urls(urls)
             print(dkbotz)
             text = text.replace(long_url, dkbotz)
             print(text)
