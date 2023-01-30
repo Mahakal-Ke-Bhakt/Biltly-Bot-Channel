@@ -46,8 +46,12 @@ async def start_(_, msg: Message):
 
 @bot.on_message(filters.channel & filters.incoming)
 async def bitly_converter_by_dkbotz(bot, message):
+    media = message.document or message.video or message.audio or message.photo
     dk_id = message.chat.id
-    
+    dkbotz = message.caption
+    try:
+        dkbotz = await replace_link(dkbotz)
+        await message.edit(dkbotz)
 
 @bot.on_message(filters.private & filters.command("help"))
 async def help_(_, msg: Message):
