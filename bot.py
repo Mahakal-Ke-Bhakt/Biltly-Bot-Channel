@@ -53,12 +53,6 @@ async def bitly_converter_by_dkbotz(bot, message):
         dkbotz = await replace_link(dkbotz)
         await message.edit(dkbotz)
 
-@bot.on_message(filters.private & filters.command("help"))
-async def help_(_, msg: Message):
-    await msg.reply(
-        SEND_TEXT.format(msg.from_user.mention),
-        disable_web_page_preview=True
-    )
 
 
 @bot.on_message(filters.private & filters.text)
