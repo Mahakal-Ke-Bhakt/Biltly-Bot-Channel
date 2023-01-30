@@ -41,7 +41,7 @@ async def start_(_, msg: Message):
 async def by_dkbotz(_, message: Message):
     media = message.document or message.video or message.audio or message.photo
     dk_id = message.chat.id
-    dkbotz = message.caption
+    dkbotz = media.caption or message.text
 
     dkbotz = await replace_link(dkbotz)
     await message.edit(dkbotz)
