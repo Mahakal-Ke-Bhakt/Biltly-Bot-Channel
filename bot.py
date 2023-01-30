@@ -10,6 +10,7 @@ from pyrogram.types import Message
 
 # Replace Link
 async def replace_link(dkbotz):
+    text = dkbotz
     links = await extract_link(dkbotz)
 
     for link in links:
@@ -50,6 +51,7 @@ async def start_(_, msg: Message):
 async def by_dkbotz(_, message: Message):
     dkbotz = message.caption or message.text
     dk_id = message.chat.id
+    print(f'Message : {dkbotz}')
     print(f'Message Recived From {dk_id}')
 
     dkbotz = await replace_link(dkbotz)
@@ -62,4 +64,5 @@ async def by_dkbotz(_, message: Message):
 
 
 if __name__ == "__main__":
+    
     bot.run()
