@@ -45,7 +45,7 @@ async def start_(_, msg: Message):
 ##### Channel Convert By @DKBOTZ #### DON'T REMOVE CREDIT 💳
 
 @bot.on_message(filters.channel & filters.incoming)
-async def bitly_converter_by_dkbotz(bot, message):
+async def by_dkbotz(_, message: Message):
     media = message.document or message.video or message.audio or message.photo
     dk_id = message.chat.id
     dkbotz = message.caption
